@@ -45,15 +45,38 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed"
           >
-            IT student with a strong focus on Business Analysis and Data Analytics.
-            Experienced in gathering requirements, modeling data, and building analytical dashboards using SQL, Python, and Power BI.
-          </motion.p>
+            <p className="mb-4 font-semibold text-slate-800 dark:text-slate-200">
+              Business Analyst & Data Analyst
+            </p>
+            <p className="mb-6">
+              Experienced in requirements gathering, process modeling, SQL analytics, dashboard development, and AI-powered product analysis.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+              <span className="font-semibold text-slate-800 dark:text-slate-200">Key Skills:</span>
+              {[
+                "Business Analysis",
+                "SQL",
+                "Power BI",
+                "Python",
+                "BPMN",
+                "UML",
+                "Product Discovery"
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
