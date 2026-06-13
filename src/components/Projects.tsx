@@ -28,21 +28,24 @@ const baProjects = [
       "Lessons Learned",
       "Executive Summary",
     ],
-    link: "#", // Replace with actual notion link
+    link: "https://app.notion.com/p/CLEO-Tr-l-T-i-ch-nh-C-nh-n-AI-m-h-n-37ae861cc4b780a99998d686cc0b0158?source=copy_link",
   },
   {
     id: 2,
     title: "AI Invoice Processing",
-    role: "Business Analyst",
+    role: "BA & Developer (Startup)",
     icon: Briefcase,
     color: "text-blue-500",
     bgColor: "bg-blue-100 dark:bg-blue-900/30",
-    tools: ["Notion", "Draw.io"],
+    tools: ["Notion", "Draw.io", "React Native", "FastAPI"],
     artifacts: [
       "Process Modeling",
       "Requirement Specification",
-      "Use Case"
+      "Use Case",
+      "API Integration",
+      "Fullstack Dev"
     ],
+    link: "https://github.com/sonbui060804/exe2-",
   },
 ];
 

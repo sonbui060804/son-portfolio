@@ -27,16 +27,13 @@ export function About() {
             className="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
           >
             <p>
-              I am an IT student with a clear orientation towards Business Analysis and Data Analytics. 
-              I am passionate about bridging the gap between business needs and technical solutions.
+              I am an IT student with a strong entrepreneurial mindset, deeply passionate about building products that solve real-world problems. My orientation lies at the intersection of Business Analysis and Data Analytics, where I bridge the gap between user needs and technical execution.
             </p>
             <p>
-              My experience includes business process analysis, constructing BPMN diagrams, 
-              writing Use Cases and User Stories, creating Requirement Specifications, and Data Modeling.
+              I am a proactive learner and an adaptable team player. In my startup project, I have successfully worn multiple hats—acting as both a Business Analyst (designing processes, gathering requirements) and a Developer (writing code to bring ideas to life).
             </p>
             <p>
-              Furthermore, I have hands-on experience with data analytics projects, utilizing SQL, Python, and Power BI 
-              to extract meaningful insights and drive data-driven decision-making.
+              Whether it's creating BPMN diagrams, building analytical dashboards, or coding software features, I always focus on delivering maximum value and an exceptional user experience.
             </p>
           </motion.div>
 
@@ -49,9 +46,9 @@ export function About() {
           >
             <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
               <User className="w-8 h-8 text-blue-500 mb-4" />
-              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Profile</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Personality</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                Highly motivated and analytical problem solver.
+                Proactive, adaptable, and highly motivated problem solver with a "can-do" startup spirit.
               </p>
             </div>
             
