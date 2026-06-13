@@ -56,21 +56,64 @@ export function Certificates() {
             </div>
           </motion.div>
 
-          {/* Certificates Placeholder */}
+          {/* Certificates */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center text-center min-h-[250px]"
+            className="bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm border border-slate-100 dark:border-slate-800"
           >
-            <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
-              <Award className="w-8 h-8 text-slate-400" />
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+                <Award className="w-5 h-5 text-emerald-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Certificates</h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Certificates</h3>
-            <p className="text-slate-500 dark:text-slate-400">
-              Data Analytics and Business Analysis certifications will be updated here soon.
-            </p>
+            <div className="space-y-4 max-h-[350px] overflow-y-auto pr-2">
+              {[
+                {
+                  title: "Big Data Specialization",
+                  issuer: "UC San Diego",
+                  date: "Apr 2026",
+                },
+                {
+                  title: "Data Visualization",
+                  issuer: "Univ. of Illinois Urbana-Champaign",
+                  date: "May 2026",
+                },
+                {
+                  title: "Foundations of Business Intelligence",
+                  issuer: "Google",
+                  date: "Apr 2026",
+                },
+                {
+                  title: "Software Development Lifecycle Specialization",
+                  issuer: "Univ. of Minnesota",
+                  date: "Jan 2025",
+                },
+                {
+                  title: "Architecting Solutions on AWS",
+                  issuer: "Amazon Web Services",
+                  date: "Jan 2025",
+                },
+                {
+                  title: "Information Systems Specialization",
+                  issuer: "Univ. of Minnesota",
+                  date: "Sep 2024",
+                },
+              ].map((cert, index) => (
+                <div key={index} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 gap-2">
+                  <div>
+                    <h4 className="font-semibold text-slate-800 dark:text-slate-200">{cert.title}</h4>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">{cert.issuer}</p>
+                  </div>
+                  <span className="shrink-0 px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-xs font-medium rounded-full w-fit">
+                    {cert.date}
+                  </span>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
