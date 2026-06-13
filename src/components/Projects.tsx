@@ -57,7 +57,7 @@ const daProjects = [
     icon: PieChart,
     color: "text-purple-500",
     bgColor: "bg-purple-100 dark:bg-purple-900/30",
-    tools: ["Power BI", "SQL"],
+    tools: ["SQL", "Python", "Power BI"],
     description: "Sales performance and trend analysis for a bakery business. Cleaned and modeled sales data, developed revenue and product performance visualizations, and identified key sales trends and patterns.",
   },
   {
@@ -67,7 +67,7 @@ const daProjects = [
     icon: Activity,
     color: "text-amber-500",
     bgColor: "bg-amber-100 dark:bg-amber-900/30",
-    tools: ["Python", "Power BI"],
+    tools: ["SQL", "Python", "Power BI"],
     description: "Analyzing player psychology and performance metrics to generate meaningful gameplay insights. Segmented players into distinct profiles and created an analytical dashboard.",
   },
   {
@@ -77,7 +77,7 @@ const daProjects = [
     icon: Database,
     color: "text-emerald-500",
     bgColor: "bg-emerald-100 dark:bg-emerald-900/30",
-    tools: ["Power BI", "SQL"],
+    tools: ["SQL", "Python", "Power BI"],
     description: "Global pandemic trends analysis including infection rates and regional comparisons. Analyzed global infection and mortality (CFR) trends and built interactive dashboards.",
   },
 ];
